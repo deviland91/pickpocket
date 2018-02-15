@@ -55,9 +55,9 @@ public class EnemyAI : MonoBehaviour {
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D (Collision2D collision)
     {
-        while (collision.CompareTag("boundary") == true)
+        if (collision.gameObject.CompareTag("boundary"))
         {
             DesiredRotQ = Quaternion.Euler(0.0f, 0.0f, transform.rotation.z/2);
             speed = -1;
