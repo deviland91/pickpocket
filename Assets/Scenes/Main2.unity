@@ -186,6 +186,11 @@ Transform:
   m_Father: {fileID: 885676396}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &193203731 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1421186616925074, guid: 22c0d2d5e3a3c944498b3ec1515d2664,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433866185}
 --- !u!1 &202688483
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,6 +545,12 @@ EdgeCollider2D:
   - {x: -22.500069, y: -12.499344}
   - {x: -22.497555, y: 12.498802}
   - {x: 22.47201, y: 12.499067}
+--- !u!114 &922089226 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114951380112285476, guid: 22c0d2d5e3a3c944498b3ec1515d2664,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433866185}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &963290872
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,6 +697,11 @@ Transform:
   m_Father: {fileID: 885676396}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1203339574 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1478428958858472, guid: 22c0d2d5e3a3c944498b3ec1515d2664,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433866185}
 --- !u!1 &1343921891
 GameObject:
   m_ObjectHideFlags: 0
@@ -897,11 +913,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  loseScreen: {fileID: 0}
-  FinalScore: {fileID: 0}
+  - {fileID: 193203731}
+  - {fileID: 1552138890}
+  - {fileID: 1471694877}
+  loseScreen: {fileID: 1203339574}
+  FinalScore: {fileID: 922089226}
 --- !u!114 &1397308108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,9 +1084,19 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114506804115386486, guid: 22c0d2d5e3a3c944498b3ec1515d2664,
+        type: 2}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 22c0d2d5e3a3c944498b3ec1515d2664, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1471694877 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1317454456873660, guid: 22c0d2d5e3a3c944498b3ec1515d2664,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433866185}
 --- !u!1 &1486779880
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,9 +1210,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa15ae57fbc83124c813460dd1eb3ff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1653314823}
   enemy: {fileID: 1126679449227098, guid: 3d1b4a2fd34088943b287b1468944496, type: 2}
   total_enemies: 10
+--- !u!1 &1552138890 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1371470032319240, guid: 22c0d2d5e3a3c944498b3ec1515d2664,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433866185}
+--- !u!114 &1653314823 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114906135553351000, guid: 22c0d2d5e3a3c944498b3ec1515d2664,
+    type: 2}
+  m_PrefabInternal: {fileID: 1433866185}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1661609409
 GameObject:
   m_ObjectHideFlags: 0
