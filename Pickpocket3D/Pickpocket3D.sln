@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickpocket3D", "Pickpocket3D.csproj", "{685D5C73-D7FF-B940-4A8E-09573AC728DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickpocket3D.Plugins", "Pickpocket3D.Plugins.csproj", "{A672C826-0AA5-3BFF-A80E-024A4E0299D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickpocket3D.Editor.Plugins", "Pickpocket3D.Editor.Plugins.csproj", "{CE3EE10A-ADC7-B76A-7576-5C44EC9CB188}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{685D5C73-D7FF-B940-4A8E-09573AC728DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{685D5C73-D7FF-B940-4A8E-09573AC728DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{685D5C73-D7FF-B940-4A8E-09573AC728DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{685D5C73-D7FF-B940-4A8E-09573AC728DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A672C826-0AA5-3BFF-A80E-024A4E0299D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A672C826-0AA5-3BFF-A80E-024A4E0299D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A672C826-0AA5-3BFF-A80E-024A4E0299D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A672C826-0AA5-3BFF-A80E-024A4E0299D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE3EE10A-ADC7-B76A-7576-5C44EC9CB188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE3EE10A-ADC7-B76A-7576-5C44EC9CB188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE3EE10A-ADC7-B76A-7576-5C44EC9CB188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE3EE10A-ADC7-B76A-7576-5C44EC9CB188}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
