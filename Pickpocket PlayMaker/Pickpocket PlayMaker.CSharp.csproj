@@ -307,6 +307,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\iTween\iTween.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiTextSetText.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateColor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateFloat.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateFloatV2.cs" />
@@ -1086,6 +1087,8 @@
     <None Include="Assets\PlayMaker\Versions\readme.txt" />
     <None Include="Assets\SimpleFantasy\ReadMe.txt" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+    <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\README.txt" />
+    <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\VolcanicGuiSkin\ReadMeForCredits.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
