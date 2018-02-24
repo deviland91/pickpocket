@@ -15,12 +15,24 @@ MonoBehaviour:
     floatVariables: []
     intVariables:
     - useVariable: 1
+      name: PlayerHealth
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
+    - useVariable: 1
       name: Score
       tooltip: 
       showInInspector: 0
       networkSync: 0
       value: 0
-    boolVariables: []
+    boolVariables:
+    - useVariable: 1
+      name: CameraGate
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 0
     stringVariables: []
     vector2Variables: []
     vector3Variables: []
@@ -35,5 +47,5 @@ MonoBehaviour:
     enumVariables: []
     categories:
     - 
-    variableCategoryIDs: 00000000
+    variableCategoryIDs: 000000000000000000000000
   events: []

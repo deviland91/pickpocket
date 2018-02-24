@@ -6,6 +6,7 @@ TagManager:
   tags:
   - TriggerDestroy
   - Decor
+  - People
   layers:
   - Default
   - TransparentFX

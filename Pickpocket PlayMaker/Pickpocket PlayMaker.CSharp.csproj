@@ -289,17 +289,17 @@
     <Reference Include="UnityEditor.iOS.Extensions.Common">
       <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
     </Reference>
-    <Reference Include="ConditionalExpression">
-      <HintPath>Assets\PlayMaker\ConditionalExpression.dll</HintPath>
-    </Reference>
-    <Reference Include="ConditionalExpressionEditor">
-      <HintPath>Assets\PlayMaker\Editor\ConditionalExpressionEditor.dll</HintPath>
+    <Reference Include="PlayMakerEditorResources">
+      <HintPath>Assets\PlayMaker\Editor\PlayMakerEditorResources.dll</HintPath>
     </Reference>
     <Reference Include="PlayMakerEditor">
       <HintPath>Assets\PlayMaker\Editor\PlayMakerEditor.dll</HintPath>
     </Reference>
-    <Reference Include="PlayMakerEditorResources">
-      <HintPath>Assets\PlayMaker\Editor\PlayMakerEditorResources.dll</HintPath>
+    <Reference Include="ConditionalExpressionEditor">
+      <HintPath>Assets\PlayMaker\Editor\ConditionalExpressionEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="ConditionalExpression">
+      <HintPath>Assets\PlayMaker\ConditionalExpression.dll</HintPath>
     </Reference>
     <Reference Include="PlayMaker">
       <HintPath>Assets\Plugins\PlayMaker\PlayMaker.dll</HintPath>
@@ -307,7 +307,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\iTween\iTween.cs" />
+    <Compile Include="Assets\Packages\Simple UI\Samples\IconPreview.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\__Internal\PlayMakerActionsUtils.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\Transform\SetRotationAdvanced.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\Transform\SetRotationVelocityDirection2d.cs" />
+    <Compile Include="Assets\PlayMaker Custom Actions\uGui\Canvas\uGuiCanvasGroupSetProperties.cs" />
     <Compile Include="Assets\PlayMaker Custom Actions\uGui\uGuiTextSetText.cs" />
+    <Compile Include="Assets\PlayMaker Custom Samples\_assets_\Scripts\uGui\PlaymakerDpCanvasScaler.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateColor.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateFloat.cs" />
     <Compile Include="Assets\PlayMaker\Actions\AnimateVariables\AnimateFloatV2.cs" />
@@ -1078,14 +1084,16 @@
     <Compile Include="Assets\PlayMaker\Actions\Vector3\Vector3Subtract.cs" />
     <Compile Include="Assets\PlayMaker\Actions\Web\WWWObject.cs" />
     <Compile Include="Assets\PlayMaker\UpdateHelper.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Packages\Simple UI\Fonts\OFL.txt" />
+    <None Include="Assets\Packages\SimpleFantasy\ReadMe.txt" />
     <None Include="Assets\PlayMaker\Editor\Install\readme.txt" />
     <None Include="Assets\PlayMaker\Readme.txt" />
     <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
     <None Include="Assets\PlayMaker\Templates\readme.txt" />
     <None Include="Assets\PlayMaker\Versions\readme.txt" />
-    <None Include="Assets\SimpleFantasy\ReadMe.txt" />
     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
     <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\README.txt" />
     <None Include="Assets\net.fabrejean\Editor\Common\GuiSkins\VolcanicGuiSkin\ReadMeForCredits.txt" />
