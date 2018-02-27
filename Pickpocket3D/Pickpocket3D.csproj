@@ -313,6 +313,7 @@
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\ScrollBackground.cs" />
     <Compile Include="Assets\Scripts\ScrollingBackground.cs" />
+    <Compile Include="Assets\Spawner.cs" />
     <Compile Include="Assets\SpawnManager.cs" />
   </ItemGroup>
   <ItemGroup>
