@@ -541,6 +541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 487564}
   - component: {fileID: 9509406}
+  - component: {fileID: 114763178948072490}
   m_Layer: 0
   m_Name: SF_Character_Human_Jester
   m_TagString: Untagged
@@ -4517,3 +4518,14 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 154484}
   m_IsPrefabParent: 1
+--- !u!114 &114763178948072490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b228f1f9575bc4ba9e6e0c00a6bf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

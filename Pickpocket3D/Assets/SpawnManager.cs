@@ -108,7 +108,7 @@ public class SpawnManager : MonoBehaviour {
         if (buildingSpawnLocation.z - player.transform.position.z <= spawnDistance && buildingSpawn.Count != 0)
         {
             int randSpawnBuilding = Random.Range(0, buildingSpawn.Count);
-            buildingSpawnLocation = new Vector3(spawnClone[0].GetComponent<Renderer>().bounds.size.x, 0, lastZBSize + zBLocation);
+            buildingSpawnLocation = new Vector3(spawnGround[0].GetComponent<Renderer>().bounds.size.x, 0, lastZBSize + zBLocation);
             buildingSpawnClone.Add(Instantiate(buildingSpawn[randSpawnBuilding], buildingSpawnLocation, Quaternion.Euler(0, 90, 0)));
             lastZBSize = buildingSpawnClone[y].GetComponent<Renderer>().bounds.size.z;
             zBLocation = buildingSpawnClone[y].GetComponent<Transform>().position.z;

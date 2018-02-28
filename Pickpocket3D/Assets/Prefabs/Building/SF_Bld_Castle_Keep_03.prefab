@@ -10,6 +10,7 @@ GameObject:
   - component: {fileID: 424436}
   - component: {fileID: 3366094}
   - component: {fileID: 2310648}
+  - component: {fileID: 114524935599737860}
   m_Layer: 0
   m_Name: SF_Bld_Castle_Keep_03
   m_TagString: Untagged
@@ -82,3 +83,14 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 130106}
   m_IsPrefabParent: 1
+--- !u!114 &114524935599737860
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22b228f1f9575bc4ba9e6e0c00a6bf42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
