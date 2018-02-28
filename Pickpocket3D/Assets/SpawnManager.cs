@@ -49,7 +49,7 @@ public class SpawnManager : MonoBehaviour {
 
     //Start spawn distance
     [Range(40, 400)]
-    float spawnDistance = 100;
+    float spawnDistance = 150;
 
     Vector3 groundSpawnLocation = new Vector3(0, 0, 0);
     Vector3 buildingSpawnLocation = new Vector3(0, 0, 0);
@@ -73,16 +73,16 @@ public class SpawnManager : MonoBehaviour {
         // Spawn initial buildings
         foreach (GameObject p in buildingSpawn)
         {
-            buildingSpawnLocation = new Vector3(spawnClone[y].GetComponent<Renderer>().bounds.size.x, 0, lastZBSize + zBLocation);
+            buildingSpawnLocation = new Vector3(spawnClone[0].GetComponent<Renderer>().bounds.size.x, 0, lastZBSize + zBLocation);
             buildingSpawnClone.Add(Instantiate(buildingSpawn[y], buildingSpawnLocation, Quaternion.Euler(0, 90, 0)));
             lastZBSize = buildingSpawnClone[y].GetComponent<Renderer>().bounds.size.z;
             zBLocation = buildingSpawnClone[y].GetComponent<Transform>().position.z;
             y++;
         }
 
-        InvokeRepeating("spawnGroundFunc", 1, 1);
-        InvokeRepeating("spawnBuildingFunc", 1, 1);
-        InvokeRepeating("spawnPeopleFunc", 1, 2);
+        InvokeRepeating("spawnGroundFunc", 1, 0.5f);
+        InvokeRepeating("spawnBuildingFunc", 1, 0.5f);
+        InvokeRepeating("spawnPeopleFunc", 1, 1);
     }
 	
 	// Update is called once per frame
@@ -105,11 +105,11 @@ public class SpawnManager : MonoBehaviour {
 
     void spawnBuildingFunc()
     {
-        if (groundSpawnLocation.z - player.transform.position.z <= spawnDistance && spawnGround.Count != 0)
+        if (buildingSpawnLocation.z - player.transform.position.z <= spawnDistance && buildingSpawn.Count != 0)
         {
             int randSpawnBuilding = Random.Range(0, buildingSpawn.Count);
-            buildingSpawnLocation = new Vector3(0, 0, lastZBSize + zBLocation);
-            buildingSpawnClone[y] = Instantiate(buildingSpawn[y], buildingSpawnLocation, Quaternion.Euler(0, 90, 0));
+            buildingSpawnLocation = new Vector3(spawnClone[0].GetComponent<Renderer>().bounds.size.x, 0, lastZBSize + zBLocation);
+            buildingSpawnClone.Add(Instantiate(buildingSpawn[randSpawnBuilding], buildingSpawnLocation, Quaternion.Euler(0, 90, 0)));
             lastZBSize = buildingSpawnClone[y].GetComponent<Renderer>().bounds.size.z;
             zBLocation = buildingSpawnClone[y].GetComponent<Transform>().position.z;
             y++;
@@ -122,7 +122,7 @@ public class SpawnManager : MonoBehaviour {
         while (amountSpawn > 0)
         {
 
-            enemySpawnLocation = new Vector3(Random.Range(spawner.transform.position.x, spawner.transform.position.x + spawner.GetComponent<BoxCollider>().size.x), 1f, Random.Range(spawner.transform.position.z, spawner.transform.position.z + spawner.GetComponent<BoxCollider>().size.z));
+            enemySpawnLocation = new Vector3(Random.Range(-spawner.GetComponent<BoxCollider>().size.x / 2, spawner.GetComponent<BoxCollider>().size.x  /2), 1f, Random.Range(spawner.transform.position.z, spawner.transform.position.z + spawner.GetComponent<BoxCollider>().size.z));
             toSpawn = Random.Range(0, 100);
             //Spawn civilian
             if (toSpawn <= 75)
