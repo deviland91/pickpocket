@@ -300,6 +300,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AI\MovingAI.cs" />
+    <Compile Include="Assets\Scripts\AI\PlayerPhysics.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CharacterAnimator.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
@@ -309,16 +311,17 @@
     <Compile Include="Assets\Scripts\Level\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\OnPressButton.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerPhysics.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerStraffing.cs" />
     <Compile Include="Assets\Scripts\Player\Push_people.cs" />
-    <Compile Include="Assets\Scripts\Player2DController.cs" />
     <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\ScrollBackground.cs" />
     <Compile Include="Assets\Scripts\ScrollingBackground.cs" />
+    <Compile Include="Assets\Scripts\UI\LevelSelection.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SimpleFantasy\ReadMe.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\UI\Fonts\OFL.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - leftButton
   - rightButton
+  - Hazards
+  - Pickup
   layers:
   - Default
   - TransparentFX
