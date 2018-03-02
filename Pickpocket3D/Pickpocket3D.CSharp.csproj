@@ -307,6 +307,7 @@
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Level\Destroy.cs" />
+    <Compile Include="Assets\Scripts\Level\PickupMoney.cs" />
     <Compile Include="Assets\Scripts\Level\Spawner.cs" />
     <Compile Include="Assets\Scripts\Level\SpawnManager.cs" />
     <Compile Include="Assets\Scripts\OnPressButton.cs" />

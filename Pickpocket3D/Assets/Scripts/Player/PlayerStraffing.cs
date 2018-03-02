@@ -5,6 +5,9 @@ using UnityEngine;
 public class PlayerStraffing : MonoBehaviour {
     public float Speed = 10;
     private float Strafe;
+    float MaxSpeed = 10;
+    float Acceleration = 10;
+    float Decelaration = 10;
     //private bool right = false;
     //private bool left = false;
 

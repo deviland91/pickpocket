@@ -295,7 +295,6 @@ GameObject:
   - component: {fileID: 4428170863901664}
   - component: {fileID: 95534255863804612}
   - component: {fileID: 54502769743933878}
-  - component: {fileID: 136503291005059302}
   - component: {fileID: 65451699536370144}
   m_Layer: 0
   m_Name: PeasantMan_Walk
@@ -539,8 +538,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1639300061622048}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -3.5496535, y: 0, z: 11.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4381947835063172}
@@ -548,7 +547,7 @@ Transform:
   - {fileID: 4458235979257676}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4452105249542676
 Transform:
   m_ObjectHideFlags: 1
@@ -840,19 +839,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!136 &136503291005059302
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1639300061622048}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.33
-  m_Height: 3
-  m_Direction: 1
-  m_Center: {x: 0, y: 1.5, z: 0}
 --- !u!137 &137339361875722906
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
