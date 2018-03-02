@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3374130}
   - component: {fileID: 2358096}
   - component: {fileID: 114907801521557248}
+  - component: {fileID: 65062700023340796}
   m_Layer: 0
   m_Name: SF_Env_Path_Straight_01
   m_TagString: Untagged
@@ -83,6 +84,18 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 115148}
   m_IsPrefabParent: 1
+--- !u!65 &65062700023340796
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115148}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 0.05, z: 5.4159546}
+  m_Center: {x: 0, y: 0.02545309, z: 0}
 --- !u!114 &114907801521557248
 MonoBehaviour:
   m_ObjectHideFlags: 1

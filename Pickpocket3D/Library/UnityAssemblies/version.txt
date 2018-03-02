@@ -1,5 +1,5 @@
 2017.3.1f1:2.2.0.0
-StandaloneWindows
+Android
 E:/Program Files/Unity 2017-3/Editor/Data/Managed/UnityEditor.dll
 E:/Program Files/Unity 2017-3/Editor/Data/Managed/UnityEngine/UnityEngine.dll
 E:/Program Files/Unity 2017-3/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll
@@ -68,6 +68,7 @@ E:/Program Files/Unity 2017-3/Editor/Data/UnityExtensions/Unity/UnitySpatialTrac
 E:/Program Files/Unity 2017-3/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll
 E:/Program Files/Unity 2017-3/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll
 E:/Program Files/Unity 2017-3/Editor/Data/Managed/UnityEditor.Graphs.dll
+E:/Program Files/Unity 2017-3/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 E:/Program Files/Unity 2017-3/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 E:/Program Files/Unity 2017-3/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll
 C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
