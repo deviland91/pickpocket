@@ -141,12 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnGround:
-  - {fileID: 115148, guid: f1a558daba823864f9269d898d97a213, type: 2}
-  - {fileID: 135682, guid: d45507c50ded1fa42b52644ab30a4427, type: 2}
-  - {fileID: 181624, guid: 7a4ae5ad745e1864bb0decd8ea7220b4, type: 2}
-  - {fileID: 109106, guid: ce6ac5958ee77ff4397654931ed64005, type: 2}
-  - {fileID: 102572, guid: f8da41f736accb843af659496711a62b, type: 2}
-  - {fileID: 121700, guid: 899bd3777808a044fb8a549c93de51ca, type: 2}
+  - {fileID: 1624234384967244, guid: 5bba01289cdd9ab41a84a28dd29ee77f, type: 2}
   spawnClone:
   - {fileID: 115148, guid: f1a558daba823864f9269d898d97a213, type: 2}
   - {fileID: 135682, guid: d45507c50ded1fa42b52644ab30a4427, type: 2}
@@ -154,19 +149,11 @@ MonoBehaviour:
   - {fileID: 109106, guid: ce6ac5958ee77ff4397654931ed64005, type: 2}
   - {fileID: 102572, guid: f8da41f736accb843af659496711a62b, type: 2}
   - {fileID: 121700, guid: 899bd3777808a044fb8a549c93de51ca, type: 2}
-  civilianSpawn:
-  - {fileID: 1639300061622048, guid: 8fcad99969be5ce4e86302ef9731682c, type: 2}
-  - {fileID: 154484, guid: c4383c1483ffe2c4e8c2b22fff7eb528, type: 2}
+  civilianSpawn: []
   civilianSpawnClone: []
-  guardSpawn:
-  - {fileID: 1503478085274798, guid: 4910e0d3cd38a0747a9179372100c61a, type: 2}
+  guardSpawn: []
   guardSpawnClone: []
-  buildingSpawn:
-  - {fileID: 141002, guid: bb5f993c52c5a044da4ae23ffd4f020f, type: 2}
-  - {fileID: 186222, guid: 826095c6345c02a429eb7119de43a91b, type: 2}
-  - {fileID: 139054, guid: 98f03ed57c719e342b2ca2f858f7d54f, type: 2}
-  - {fileID: 114284, guid: 3c326d1e3d2fe104abaffd40de9b7d82, type: 2}
-  - {fileID: 130106, guid: cbb674394cf6e97489268596b0aa7704, type: 2}
+  buildingSpawn: []
   buildingSpawnClone: []
   player: {fileID: 1686909818572244, guid: ccab3ffb11c1ec644a5c107e14315e42, type: 2}
   spawner: {fileID: 238440751}
