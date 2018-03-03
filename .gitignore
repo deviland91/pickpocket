@@ -73,3 +73,6 @@ $RECYCLE.BIN/
 Assets/Resources/Materials/Mouse.meta
 
 Assets/Levels/Centrifuge.unity
+*.dwlt
+Pickpocket3D/Library/metadata/00/00000000000000002000000000000000
+*.dwlt
