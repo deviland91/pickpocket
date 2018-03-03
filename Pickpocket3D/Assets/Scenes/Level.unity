@@ -142,6 +142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnGround:
   - {fileID: 1624234384967244, guid: 5bba01289cdd9ab41a84a28dd29ee77f, type: 2}
+  - {fileID: 1624234384967244, guid: 5bba01289cdd9ab41a84a28dd29ee77f, type: 2}
   spawnClone:
   - {fileID: 115148, guid: f1a558daba823864f9269d898d97a213, type: 2}
   - {fileID: 135682, guid: d45507c50ded1fa42b52644ab30a4427, type: 2}
@@ -155,7 +156,7 @@ MonoBehaviour:
   guardSpawnClone: []
   buildingSpawn: []
   buildingSpawnClone: []
-  player: {fileID: 1686909818572244, guid: ccab3ffb11c1ec644a5c107e14315e42, type: 2}
+  player: {fileID: 1860000695}
   spawner: {fileID: 238440751}
 --- !u!4 &179316238
 Transform:
@@ -561,7 +562,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4502336589896978, guid: ccab3ffb11c1ec644a5c107e14315e42, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -11.33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4502336589896978, guid: ccab3ffb11c1ec644a5c107e14315e42, type: 2}
       propertyPath: m_LocalRotation.x
@@ -582,6 +583,11 @@ Prefab:
     - target: {fileID: 4502336589896978, guid: ccab3ffb11c1ec644a5c107e14315e42, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114985349510765668, guid: ccab3ffb11c1ec644a5c107e14315e42,
+        type: 2}
+      propertyPath: Speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccab3ffb11c1ec644a5c107e14315e42, type: 2}
@@ -734,6 +740,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1860000695 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1686909818572244, guid: ccab3ffb11c1ec644a5c107e14315e42,
+    type: 2}
+  m_PrefabInternal: {fileID: 1436960223}
 --- !u!1 &1871621173
 GameObject:
   m_ObjectHideFlags: 0

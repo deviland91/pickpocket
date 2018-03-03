@@ -13,13 +13,13 @@ public class SpawnManager : MonoBehaviour {
 
     //Game Objects for the enemies to spawn
     [Header("Civilians to spawn")]
-    public List<GameObject> civilianSpawn;
+    public GameObject[] civilianSpawn;
 
     [HideInInspector]
     public List<GameObject> civilianSpawnClone;
 
     [Header("Guards to spawn")]
-    public List<GameObject> guardSpawn;
+    public GameObject[] guardSpawn;
 
     [HideInInspector]
     public List<GameObject> guardSpawnClone;
@@ -58,15 +58,16 @@ public class SpawnManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
+
 
         // Spawn initial ground
-        foreach (GameObject o in spawnGround)
+        foreach (GameObject item in spawnGround)
         {
-            groundSpawnLocation = new Vector3(0, 0, lastZGSize+zGLocation);         
-            spawnClone[x] = Instantiate(spawnGround[x], groundSpawnLocation, Quaternion.Euler(0, 90, 0));
-            lastZGSize = spawnClone[x].GetComponent<Renderer>().bounds.size.z;
-            zGLocation = spawnClone[x].GetComponent<Transform>().position.z;
+            groundSpawnLocation = new Vector3(0, 0, lastZGSize + zGLocation);
+            spawnClone.Add(Instantiate(item, groundSpawnLocation, Quaternion.Euler(0, 0, 0)));
+            lastZGSize = item.GetComponent<BoxCollider>().size.z;
+            zGLocation = groundSpawnLocation.z;
+            
             x++;
         }
 
@@ -74,13 +75,13 @@ public class SpawnManager : MonoBehaviour {
         foreach (GameObject p in buildingSpawn)
         {
             buildingSpawnLocation = new Vector3(spawnClone[0].GetComponent<Renderer>().bounds.size.x, 0, lastZBSize + zBLocation);
-            buildingSpawnClone.Add(Instantiate(buildingSpawn[y], buildingSpawnLocation, Quaternion.Euler(0, 90, 0)));
+            buildingSpawnClone.Add(Instantiate(buildingSpawn[y], buildingSpawnLocation, Quaternion.Euler(0, 0, 0)));
             lastZBSize = buildingSpawnClone[y].GetComponent<Renderer>().bounds.size.z;
             zBLocation = buildingSpawnClone[y].GetComponent<Transform>().position.z;
             y++;
         }
 
-        InvokeRepeating("spawnGroundFunc", 1, 0.5f);
+        InvokeRepeating("spawnGroundFunc", 1, 1f);
         InvokeRepeating("spawnBuildingFunc", 1, 0.5f);
         InvokeRepeating("spawnPeopleFunc", 1, 1);
     }
@@ -90,15 +91,19 @@ public class SpawnManager : MonoBehaviour {
 
     }
 
-   void spawnGroundFunc()
+
+    void spawnGroundFunc()
     {
+        Debug.Log("GroundSpawnLocationZ: " + groundSpawnLocation.z + " PlayerTransformZ: " + player.transform.position.z);
+        
         if (groundSpawnLocation.z - player.transform.position.z <= spawnDistance && spawnGround.Count != 0)
         {
-            int randSpawnGround = Random.Range(0, spawnGround.Count);
+            int randSpawnGround = Random.Range(0, spawnGround.Count-1);
             groundSpawnLocation = new Vector3(0, 0, lastZGSize + zGLocation);
-            spawnClone.Add(Instantiate(spawnGround[randSpawnGround], groundSpawnLocation, Quaternion.Euler(0, 90, 0)));
-            lastZGSize = spawnClone[x].GetComponent<Renderer>().bounds.size.z;
-            zGLocation = spawnClone[x].GetComponent<Transform>().position.z;
+            spawnClone.Add(Instantiate(spawnGround[randSpawnGround], groundSpawnLocation, Quaternion.Euler(0, 0, 0)));
+            lastZGSize = spawnGround[randSpawnGround].GetComponent<BoxCollider>().size.z;
+            zGLocation = groundSpawnLocation.z; ;
+            Debug.Log("lastZGSize: " + spawnGround[randSpawnGround] + " zGLocation: " + spawnClone.ToArray()[x].GetComponent<BoxCollider>().size.z);
             x++;
         }
     }
@@ -112,6 +117,7 @@ public class SpawnManager : MonoBehaviour {
             buildingSpawnClone.Add(Instantiate(buildingSpawn[randSpawnBuilding], buildingSpawnLocation, Quaternion.Euler(0, 90, 0)));
             lastZBSize = buildingSpawnClone[y].GetComponent<Renderer>().bounds.size.z;
             zBLocation = buildingSpawnClone[y].GetComponent<Transform>().position.z;
+
             y++;
         }
     }
@@ -119,7 +125,7 @@ public class SpawnManager : MonoBehaviour {
     void spawnPeopleFunc()
     {
         amountSpawn = Random.Range(0, 4);
-        while (amountSpawn > 0)
+        while (amountSpawn > 0 && civilianSpawn.Length != 0)
         {
 
             enemySpawnLocation = new Vector3(Random.Range(-spawner.GetComponent<BoxCollider>().size.x / 2, spawner.GetComponent<BoxCollider>().size.x  /2), 1f, Random.Range(spawner.transform.position.z, spawner.transform.position.z + spawner.GetComponent<BoxCollider>().size.z));
@@ -129,17 +135,17 @@ public class SpawnManager : MonoBehaviour {
             {
                 if (Random.Range(0, 4) <= 3)
                 {
-                    civilianSpawnClone.Add(Instantiate(civilianSpawn[Random.Range(0, civilianSpawn.Count - 1)], enemySpawnLocation, Quaternion.Euler(0, 0, 0)));
+                    civilianSpawnClone.Add(Instantiate(civilianSpawn[Random.Range(0, civilianSpawn.Length - 1)], enemySpawnLocation, Quaternion.Euler(0, 0, 0)));
                 }
                 else
                 {
-                    civilianSpawnClone.Add(Instantiate(civilianSpawn[Random.Range(0, civilianSpawn.Count - 1)], enemySpawnLocation, Quaternion.Euler(0, 0, 0)));
+                    civilianSpawnClone.Add(Instantiate(civilianSpawn[Random.Range(0, civilianSpawn.Length - 1)], enemySpawnLocation, Quaternion.Euler(0, 0, 0)));
                 }              
             }
             //Spawn Guard
             else if(toSpawn > 75 && toSpawn <= 100)
             {
-                guardSpawnClone.Add(Instantiate(guardSpawn[Random.Range(0, guardSpawn.Count - 1)], enemySpawnLocation, Quaternion.Euler(0, 0, 0)));
+                guardSpawnClone.Add(Instantiate(guardSpawn[Random.Range(0, guardSpawn.Length - 1)], enemySpawnLocation, Quaternion.Euler(0, 0, 0)));
             }
             z++;
             amountSpawn--;
